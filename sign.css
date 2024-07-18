@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.signin-container {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.signin-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.signin-box h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+form {
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.signin-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #A52A2A;
+    border: 1px solid #A52A2A;
+    color: #111;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.signin-button:hover {
+    background-color: #A52A2A;
+}
+
+.divider {
+    margin: 20px 0;
+}
+
+.or-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.or-divider span {
+    background-color: #fff;
+    padding: 0 10px;
+    color: #888;
+    font-weight: bold;
+}
+
+.create-account-button,
+.continue-with-google {
+    width: 100%;
+    padding: 12px;
+    background-color: #f0f2f5;
+    border: 1px solid #ddd;
+    color: #111;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.create-account-button:hover,
+.continue-with-google:hover {
+    background-color: #f0f2f5;
+}

@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; /* White background */
+    text-align: center; /* Center align text */
+}
+
+.navbar {
+    background-color: #A52A2A;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.service-catalog select, .nav-item {
+    cursor: pointer;
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: left; /* Reset text alignment for content */
+}
+
+.issue-box, .upload-box {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.issue-box label, .upload-box label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+textarea, input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.submit-button {
+    background-color: #A52A2A;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.submit-button:hover {
+    background-color: #7A251F;
+}
+
+.footer {
+    background-color: #A52A2A;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}

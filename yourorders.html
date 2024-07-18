@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GDS Returns & Orders</title>
+    <link rel="stylesheet" href="orders.css">
+</head>
+<body>
+    <!-- Navigation bar -->
+    <div class="navbar">
+        <div class="amazon-logo">GDS Logistics</div>
+        <div class="nav-links">
+            <a href="#">Your Orders</a>
+            <a href="#">Buy Again</a>
+            <a href="#">Not Yet Shipped</a>
+            <a href="#">Returns & Orders</a>
+            <a href="#">Your Account</a>
+        </div>
+    </div>
+
+    <!-- Orders section -->
+    <div class="main-content">
+        <h1>Your Orders</h1>
+        <div id="orders-list">
+            <!-- Orders will be dynamically added here -->
+        </div>
+    </div>
+
+    <!-- Footer section -->
+    <div class="footer">
+        <p>© 2024 GDS Logistics</p>
+    </div>
+
+    <script>
+        // Function to display saved pickup details
+        function displayPickupDetails() {
+            var pickupDetails = JSON.parse(localStorage.getItem('pickupDetails'));
+
+            // Check if pickupDetails exist and display them
+            if (pickupDetails) {
+                var ordersList = document.getElementById('orders-list');
+                var orderHtml = `
+                    <div class="order">
+                        <div class="order-info">
+                            <div class="order-info-placeholder"></div>
+                            <div class="order-info-placeholder"></div>
+                        </div>
+                        <div class="order-details">
+                            <p><strong>Name:</strong> ${pickupDetails.name}</p>
+                            <p><strong>Phone:</strong> ${pickupDetails.phone}</p>
+                            <p><strong>Email:</strong> ${pickupDetails.email}</p>
+                            <p><strong>Pickup Location:</strong> ${pickupDetails.location1}</p>
+                            <p><strong>Destination Location:</strong> ${pickupDetails.location2}</p>
+                        </div>
+                        <div class="order-actions">
+                            <button class="action-button">Track Package</button>
+                            <button class="action-button">Cancel Items</button>
+                        </div>
+                    </div>
+                `;
+                ordersList.innerHTML = orderHtml;
+            }
+        }
+
+        // Call displayPickupDetails when yourorders.html is loaded
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', displayPickupDetails);
+        } else {
+            displayPickupDetails();
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2; /* Background color */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1200px; /* Adjust max-width as needed */
+    background-color: #fff; /* Content background color */
+    border: 1px solid #ddd; /* Border for content */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow */
+}
+
+.header {
+    background-color: #A52A2A; /* Header background color */
+    color: black; /* Header text color */
+    padding: 10px 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.content {
+    padding: 20px 0;
+}
+
+.content h2 {
+    margin-top: 20px;
+}
+
+.footer {
+    background-color: #A52A2A; /* Footer background color */
+    color:black; /* Footer text color */
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px; /* Ensure space between content and footer */
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* Center align the Terms and Conditions heading */
+.header .container h1 {
+    text-align: center;
+}
